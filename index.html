@@ -660,30 +660,42 @@
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
 
-                    <form id="form">
-                        <div class="row g-3">
+                    <form id="form"  class="needs-validation" method="get" novalidate>
+                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre de la Empresa">
-                                    <label for="name">Tu Nombre/Empresa</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre de la Empresa" required>
+                                    <label for="name validationCustom01">Tu Nombre/Empresa</label>
+                                    <div class="invalid-feedback">
+                                        Por favor introduce el Nombre
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Tu Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Tu Email" required>
                                     <label for="email">Tu Email</label>
+                                    <div class="invalid-feedback">
+                                        Por favor introduce el Email.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Tu nombre">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Tu nombre" required>
                                     <label for="subject">Asunto</label>
+                                    <div class="invalid-feedback">
+                                        Por favor introduce el Asunsto.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Escribe tu Menssage Aqui" id="message" name="message" style="height: 100px"></textarea>
+                                    <textarea class="form-control" placeholder="Escribe tu Menssage Aqui" id="message" name="message" style="height: 100px" required></textarea>
                                     <label for="message">Menssage</label>
+                                    <div class="invalid-feedback">
+                                        Por favor introduce el Mensaje.
+                                      </div>
                                 </div>
                             </div>
                             <div class="col-12">
